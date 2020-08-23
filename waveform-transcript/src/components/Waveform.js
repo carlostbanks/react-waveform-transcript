@@ -1,14 +1,15 @@
 import React from "react";
 import "../App.css";
 
-const Waveform = () => {
 
-return (
-    <div className="main-container">
-        <h1>Waveform</h1>
-        
-    </div>
-  );
-};
+const Waveform = (props) => {
+
+  
+    return (
+      <div className='waveform'>
+      {Math.round(props.state.time)} / {Math.round(props.state.duration)}
+      </div>
+    );
+  };
 
 export default Waveform;

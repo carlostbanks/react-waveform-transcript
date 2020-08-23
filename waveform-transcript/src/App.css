@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EFF2F6;
+  align-items: center;
+  padding: 0 20px
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+
+.share-button {
+  background-color: #1690EB !important;
+  text-transform: capitalize !important;
+}
+
+.rewind, .forward {
+  color: grey !important
+}
+
+.rewind:hover, .forward:hover {
+  color: #1690EB !important
+}
+
+.play, .pause {
+  color: #1690EB !important;
+}
