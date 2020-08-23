@@ -107,7 +107,6 @@ button:active {
 }
 
 .dropdown {
-  color: red;
   font-weight: bold !important;
   padding: 0 20px;
   border-color: none !important;
@@ -129,9 +128,9 @@ button:active {
 .time {
   background-color: #EFF2F6;
   display: flex;
-  margin-left: 40px;
+  margin-left: 20px;
   width: 80px;
-  padding: 0 20px;
+  padding: 0 10px;
   height: 30px;
   border-radius: 5px;
   margin-top: 20px;
@@ -139,3 +138,79 @@ button:active {
   justify-content: center;
   font-size: 12px;
 }
+
+.search {
+  display: flex !important;
+  width: 500px !important;
+  margin-left: 20px !important;
+  margin-bottom: 20px !important;
+  font-size: 12px !important;
+}
+
+.waveform {
+  display: flex;
+  flex-flow: column;
+  margin-left: 20px;
+}
+
+.textbox {
+  display: flex;
+  margin-left: 20px;
+  align-items: flex-start;
+  height: 70px;
+  width: 700px;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.textbox h2 {
+  font-size: 12px;
+  text-align: left;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.textbox .first-purple {
+  border: 1px solid #AB99EE;
+}
+
+.textbox .second-blue {
+  border-left: 1px solid #1690EB;
+}
+
+.textbox h3 {
+  font-size: 12px;
+  text-align: left;
+  padding-right: 10px;
+  color: gray;
+}
+
+.offset {
+  margin-left: 60px;
+}
+
+.persons {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid lightgrey;
+  text-transform: uppercase;
+}
+
+.persons h2 {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.first-purple {
+  color: #AB99EE;
+}
+
+.second-blue {
+  color: #1690EB
+}
+
+.transcript {
+  margin-top: 20px;
+}
+

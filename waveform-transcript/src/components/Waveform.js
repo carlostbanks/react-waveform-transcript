@@ -8,7 +8,7 @@ const Waveform = (props) => {
   var hours = Math.floor(current / 60 / 60);
   var minutes = Math.floor(current / 60) - (hours * 60);
   var seconds = current % 60;
-  var formatted = minutes.toString().padStart(2, '0') + 
+  var formatted = minutes.toString().padStart(1, '0') + 
   ':' + seconds.toString().padStart(2, '0');
   
   // time conversion for total
@@ -16,8 +16,10 @@ const Waveform = (props) => {
   var hoursTotal = Math.floor(total / 60 / 60);
   var minutesTotal = Math.floor(total / 60) - (hoursTotal * 60);
   var secondsTotal = total % 60;
-  var formattedTotal = minutesTotal.toString().padStart(2, '0') + 
+  var formattedTotal = minutesTotal.toString().padStart(1, '0') + 
   ':' + secondsTotal.toString().padStart(2, '0');
+
+  
 
     return (
       <div className='waveform-container'>
@@ -25,17 +27,15 @@ const Waveform = (props) => {
         {formatted} / {formattedTotal}
         </div>
           <div className='waveform'>
-            <div className='persons'>
-              <div>
-                <h2>person 1</h2>
+              <div className='persons first-purple'>
+                <h2>94% Brian I.</h2>
                 <h1>Sounds1 here</h1>
               </div> 
-              <div>
-                <h2>person 2</h2>
+              <div className='persons second-blue'>
+                <h2>6% Carlos B.</h2>
                 <h1>Sounds2 here</h1>
               </div> 
-            </div>
-        </div>
+          </div>
       </div>
     );
   };
