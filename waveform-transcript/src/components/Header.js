@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "../App.css";
 import Button from '@material-ui/core/Button';
 import Player from './Player'
-
+import Share from '../assets/share.png'
 
 const Header = (props) => {
 
@@ -14,6 +14,7 @@ return (
         color="Primary" 
         className='share-button'   
       >
+          <img className='arrow' src={Share}/>
           Share
           </Button>
     </div>

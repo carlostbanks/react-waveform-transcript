@@ -42,7 +42,8 @@
   justify-content: space-between;
   background-color: #EFF2F6;
   align-items: center;
-  padding: 0 20px
+  padding: 0 20px;
+  height: 70px
 }
 
 .player {
@@ -55,14 +56,72 @@
   text-transform: capitalize !important;
 }
 
-.rewind, .forward {
+.rewind, .forward, .volume {
   color: grey !important
 }
 
 .rewind:hover, .forward:hover {
-  color: #1690EB !important
+  color: #1690EB !important;
+  cursor: pointer !important
+}
+
+.play:hover, .pause:hover, .volume:hover {
+  cursor: pointer !important
 }
 
 .play, .pause {
   color: #1690EB !important;
+  border-color: none !important;
+  padding: 0 5px;
+  font-size: 40px !important;
+}
+
+.btn {
+  color: #1690EB;
+  font-weight: bold;
+}
+
+.dropdownitem {
+  display: flex;
+  flex-flow: column;
+  color: #1690EB !important;
+  padding: 5px 10px;
+  font-size: small !important;
+  text-decoration: none;
+}
+
+button{
+  border: none !important; 
+}
+
+button:active {
+  border: none !important; 
+
+}
+
+.list {
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.dropdown {
+  color: red;
+  font-weight: bold !important;
+  padding: 0 20px;
+  border-color: none !important;
+  
+}
+
+.icon{
+  position:absolute;
+  left:18px;
+  top:9px;
+  font-size:30px;
+}
+
+.arrow {
+  height: 12px;
+  padding-right: 15px;
 }
