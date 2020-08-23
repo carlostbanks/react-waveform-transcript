@@ -109,6 +109,7 @@ export default ({
       time = Math.min(state.duration, Math.max(0, time));
       el.currentTime = time || 0;
     },
+    
     setPlaybackRate: rate => {
       const el = ref.current;
       if (!el || state.duration === undefined) {

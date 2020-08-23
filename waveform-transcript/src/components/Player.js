@@ -6,9 +6,7 @@ import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown'
 import VolumeUp from '@material-ui/icons/VolumeUp';
-
 import "../App.css";
-import { List } from '@material-ui/core';
 
 
 const Player = (props) => {
@@ -18,6 +16,10 @@ const Player = (props) => {
     const handleSelect=(e)=>{
         setValue(e)
       }
+
+    const changeRate=(e)=> {
+        props.controls.setPlaybackRate(e.target.value / 100)
+    }
 
   return (
     <div className='player'>
@@ -44,7 +46,7 @@ const Player = (props) => {
       className='dropdown'
         >
             <div className='list'>
-            <Dropdown.Item eventKey="option-1" className='dropdownitem'>0.5x</Dropdown.Item>
+            <Dropdown.Item onClick={handleSelect}className='dropdownitem'>0.5x</Dropdown.Item>
               <Dropdown.Item eventKey="option-2" className='dropdownitem'>1.0x</Dropdown.Item>
               <Dropdown.Item eventKey="option-3" className='dropdownitem'>1.5x</Dropdown.Item>
               <Dropdown.Item eventKey="option-3" className='dropdownitem'>2.0x</Dropdown.Item>
@@ -54,12 +56,6 @@ const Player = (props) => {
 
 
       </DropdownButton>
-
-      {/* <input
-        onChange={e => props.controls.setPlaybackRate(e.target.value / 100)}
-        type="number"
-        value={props.state.playbackRate * 100}
-      /> */}
       <VolumeUp className='volume'/>
     </div>
   );
