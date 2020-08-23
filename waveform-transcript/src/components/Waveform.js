@@ -19,7 +19,7 @@ const Waveform = (props) => {
   var formattedTotal = minutesTotal.toString().padStart(1, '0') + 
   ':' + secondsTotal.toString().padStart(2, '0');
 
-  
+
 
     return (
       <div className='waveform-container'>
@@ -29,11 +29,11 @@ const Waveform = (props) => {
           <div className='waveform'>
               <div className='persons first-purple'>
                 <h2>94% Brian I.</h2>
-                <h1>Sounds1 here</h1>
+                <div className='bars purple'></div>
               </div> 
               <div className='persons second-blue'>
                 <h2>6% Carlos B.</h2>
-                <h1>Sounds2 here</h1>
+                <div className='bars blue'></div>
               </div> 
           </div>
       </div>
