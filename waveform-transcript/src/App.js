@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Transcript from './components/Transcipt'
+import Audioplayer from './components/Audioplayer'
 
 function App() {
   return (
     <div className="App">
-      <Transcript />
+      <Audioplayer />
     </div>
   );
 }
