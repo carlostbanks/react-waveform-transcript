@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Transcript from './components/Transcipt'
 
 function App() {
   return (
     <div className="App">
-      <h1>Waveform Transcript</h1>
+      <Transcript />
     </div>
   );
 }
