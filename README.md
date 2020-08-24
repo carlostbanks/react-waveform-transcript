@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 09b95120dff13eb37d3277494a58fade0e644905
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +70,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<<<<<<< HEAD
+=======
+=======
+# react-waveform-transcript
+>>>>>>> 871a3af0892f1d5ae64a227ac9e654370deba3a9
+>>>>>>> 09b95120dff13eb37d3277494a58fade0e644905
