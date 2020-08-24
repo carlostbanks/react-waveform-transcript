@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "../App.css";
 import Button from '@material-ui/core/Button';
 import Player from './Player'
@@ -14,7 +14,7 @@ return (
         color="Primary" 
         className='share-button'   
       >
-          <img className='arrow' src={Share}/>
+          <img className='arrow' src={Share} alt='share'/>
           Share
           </Button>
     </div>

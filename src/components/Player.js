@@ -17,10 +17,6 @@ const Player = (props) => {
         setValue(e)
       }
 
-    const changeRate=(e)=> {
-        props.controls.setPlaybackRate(e.target.value / 100)
-    }
-
   return (
     <div className='player'>
       {props.element}
@@ -47,7 +43,7 @@ const Player = (props) => {
         >
             <div className='list'>
             <Dropdown.Item onClick={handleSelect}className='dropdownitem'>0.5x</Dropdown.Item>
-              <Dropdown.Item eventKey="option-2" className='dropdownitem'>1.0x</Dropdown.Item>
+              <Dropdown.Item onClick={value} className='dropdownitem'>1.0x</Dropdown.Item>
               <Dropdown.Item eventKey="option-3" className='dropdownitem'>1.5x</Dropdown.Item>
               <Dropdown.Item eventKey="option-3" className='dropdownitem'>2.0x</Dropdown.Item>
               <Dropdown.Item eventKey="option-3" className='dropdownitem'>2.5x</Dropdown.Item>
